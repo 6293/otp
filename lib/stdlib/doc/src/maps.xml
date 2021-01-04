@@ -368,10 +368,9 @@ none</code>
       <name name="merge_deep" arity="2" since=""/>
       <fsummary></fsummary>
       <desc>
-        <p>Merges two maps, and if two keys exist in both maps
-          and both values are maps, merges them recursively.</p>
-        <p>If either of values at the same key is not map,
-          the value in <c><anno>Map1</anno></c> is
+        <p>Merges two maps, and if the same key exists in both maps
+          and both their values are maps, merges them recursively.</p>
+        <p>Otherwise, the value in <c><anno>Map1</anno></c> is
           superseded by the value in <c><anno>Map2</anno></c>.</p>
         <p>The call fails with a <c>{badmap,Map}</c> exception if
           <c><anno>Map1</anno></c> or <c><anno>Map2</anno></c> is not a map.</p>
